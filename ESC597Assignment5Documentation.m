@@ -17,8 +17,8 @@
 
 
 %>@section funcDecr Part 4 
-%>This section is used to . 
-%>Developed by .  
+%>This section is used to compute and plot the mean and standard deviation of particle location as a functin of time. 
+%>Developed by Soumyabrata Maiti.  
 
 
 %>@section funcDecr Part 5 
@@ -43,6 +43,21 @@
 %>[out1, out2] = function( arg1, arg2)
 %>  out1 = arg2;
 %>  out2 = arg1;
+%>end
+
+%>% ======================================================================
+%>%> @brief This function takes the input of A and plots the moving average of X, Y, and Z location of a particle as a function of time. 
+%>%> @param A is time series matrix in the following format [t X1 Y1 Z1 X2 Y2 Z2 ... Xn Yn Zn].
+%>%> @param flag decides whether to plot the time series (flag=1) or not (flag=0).
+
+%>%> @retval t Seperate time vector.
+%>%> @retval X describes the mean X-location of the particle.
+%>%> @retval Y describes the mean Y-location of the particle.
+%>%> @retval Z describes the mean Z-location of the particle.
+%>% ======================================================================
+%>[t, X, Y, Z]=moving_average(A,flag)
+%>  
+%>  
 %>end
 
 
